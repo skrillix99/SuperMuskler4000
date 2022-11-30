@@ -5,14 +5,39 @@
     <link rel="stylesheet" href="CSS/style.css">
     <!--VUE-->
     <script src="https://unpkg.com/vue@next"></script>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9. november test eksamen</title>
+    <title>SuperMuskler 4000</title>
 </head>
 <body>
     <div id="app">
+        <button class="btn btn-primary" v-on:click="GetAllExercises(search_muscle)">Get all Exercises</button>
+        <br>
 
+        <select v-model="search_muscle">
+            <option disabled hidden value="Choose your Muscle Group">Choose your Muscle Group</option>
+            <option value="abdominals">Abdominals</option>
+            <option value="biceps">Biceps</option>
+            <option value="forearms">Forearms</option>
+        </select>
+
+        <h1>Exercise List</h1>
+            
+
+        <ul v-if="exercise_list.length > 0">
+            <li v-for="exercise in exercise_list" v-bind:key="exercise_list.name">
+                Name: {{exercise.name}}
+                <div v-show="">
+                    Type: {{exercise.type}}
+                </div>
+
+            </li>
+        </ul>
+        <div v-else style="font-style: italic;">No duathletes are registered
+        </div>
 
 
 
@@ -20,6 +45,6 @@
 
 
 
-    <script src="JS/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
