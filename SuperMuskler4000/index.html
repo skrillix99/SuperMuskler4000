@@ -40,14 +40,6 @@
               {{exercise.instructions}}
             </div>
         </li>
-
-            <li v-for="exercise in exercise_list" v-bind:key="exercise_list.name">
-                Name: {{exercise.name}}
-                <div>
-                    Type: {{exercise.type}}
-                </div>
-
-            </li>
         </ul>
         <div v-else style="font-style: italic;">No duathletes are registered
         </div>
