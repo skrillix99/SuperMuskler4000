@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibVideos\ClassLibVideos.csproj" />
+    <ProjectReference Include="..\SuperMuskler4000GIFAPI\SuperMuskler4000GIFAPI.csproj" />
   </ItemGroup>
 
 </Project>

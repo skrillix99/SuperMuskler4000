@@ -1,4 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace SuperMuskler4000APITest
 {
     [TestClass]
