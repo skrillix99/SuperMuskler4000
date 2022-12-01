@@ -3,6 +3,8 @@ const baseURL = "https://api.api-ninjas.com/v1/exercises"
 
 
 
+
+
 Vue.createApp({
     data() {
         return {
