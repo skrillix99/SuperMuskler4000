@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperMuskler4000GIFAPI", "SuperMuskler4000GIFAPI\SuperMuskler4000GIFAPI.csproj", "{70DC7CD9-9893-43F0-B1A6-5E24866F6984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibVideos", "ClassLibVideos\ClassLibVideos.csproj", "{BBCB8AB4-71B8-438E-B285-7B48CE58D524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70DC7CD9-9893-43F0-B1A6-5E24866F6984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DC7CD9-9893-43F0-B1A6-5E24866F6984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DC7CD9-9893-43F0-B1A6-5E24866F6984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DC7CD9-9893-43F0-B1A6-5E24866F6984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCB8AB4-71B8-438E-B285-7B48CE58D524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCB8AB4-71B8-438E-B285-7B48CE58D524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCB8AB4-71B8-438E-B285-7B48CE58D524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCB8AB4-71B8-438E-B285-7B48CE58D524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EFFC7A2-EA44-4D3B-93C9-CE98B5DC69A5}
+	EndGlobalSection
+EndGlobal
