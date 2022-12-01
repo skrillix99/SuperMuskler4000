@@ -26,19 +26,22 @@
 
         <h1>Exercise List</h1>
             
-
         <ul v-if="exercise_list.length > 0">
-            <li v-for="exercise in exercise_list" v-bind:key="exercise_list.name">
-                Name: {{exercise.name}}
-                <div v-show="">
-                    Type: {{exercise.type}}
-                </div>
-
-            </li>
-        </ul>
+        <li v-for="(exercise, index) in exercise_list">
+            <div>
+               <div @click="exerciseToShow =index">{{exercise.name}}</div>
+            </div>
+            <div v-show="exerciseToShow == index">
+              {{exercise.type}}
+              {{exercise.muscle}}
+              {{exercise.equipment}}
+              {{exercise.difficulty}}
+              {{exercise.instructions}}
+            </div>
+        </li>
         <div v-else style="font-style: italic;">No duathletes are registered
         </div>
-
+        </ul>
 
 
     </div>
