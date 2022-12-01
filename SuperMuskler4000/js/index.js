@@ -16,7 +16,8 @@ Vue.createApp({
             instructions: "",
             exercise_list: [],
             statuscode: null,
-            search_muscle: "Choose your Muscle Group"
+            search_muscle: "Choose your Muscle Group",
+            exerciseToShow: -1
             
             
         }
@@ -35,6 +36,9 @@ Vue.createApp({
                 this.exercise_list = response.data
                 
             })
-        }
+        },
+        
+        
+
     }
 }).mount("#app")
