@@ -54,6 +54,18 @@ namespace SuperMuskler4000APITest
             Assert.AreEqual(expectedId, actualId);
         }
 
+        [TestMethod]
+        public void MuscleTypeReturnsCorrectMuscleType()
+        {
+            //Arrange
+            string expectedMuscleType = "biceps";
 
+            //Act
+            video.MuscleType = "biceps";
+            string actualMuscleType = video.MuscleType;
+
+            //Assert
+            Assert.AreEqual(expectedMuscleType, actualMuscleType);
+        }
     }
 }
