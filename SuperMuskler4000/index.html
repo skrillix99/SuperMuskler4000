@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Bootstrap + CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <!--VUE-->
@@ -14,16 +15,19 @@
 </head>
 <body>
     <div id="app">
-        <button class="btn btn-primary" v-on:click="GetAllExercises(search_muscle)">Get all Exercises</button>
-        <br>
-
+        <!--Prints a list of the different exercises, based off your selected search criteria-->
         <select v-model="search_muscle">
             <option disabled hidden value="Choose your Muscle Group">Choose your Muscle Group</option>
             <option value="abdominals">Abdominals</option>
             <option value="biceps">Biceps</option>
             <option value="forearms">Forearms</option>
         </select>
+        <br>
+        <button class="btn btn-primary" v-on:click="GetAllExercises(search_muscle)">Get all Exercises</button>
+        <br>
 
+
+        <!--The list of different exercises, based off the above search-->
         <h1>Exercise List</h1>
             
         <ul v-if="exercise_list.length > 0">
@@ -33,17 +37,23 @@
                <div @click="exerciseToShow =index">{{exercise.name}}</div>
             </div>
             <div v-show="exerciseToShow == index">
-              {{exercise.type}}
-              {{exercise.muscle}}
-              {{exercise.equipment}}
-              {{exercise.difficulty}}
-              {{exercise.instructions}}
+              <b>Type:</b> {{exercise.type}}
+              <br>
+              <b>Equipment:</b> {{exercise.equipment}}
+              <br>
+              <b>Difficulty:</b> {{exercise.difficulty}}
+              <br>
+              <b>Instructions:</b> {{exercise.instructions}}
             </div>
         </li>
         </ul>
-        <div v-else style="font-style: italic;">No duathletes are registered
+        <div v-else style="font-style: italic;">Please select a muscle group you wish to train
         </div>
-        </ul>
+
+        <button class="btn btn-primary" v-on:click="GetGifs">Testo</button>
+        <!-- <div>{{info}}</div> -->
+        <img src="require({{info.preview_url}})" alt="">
+
 
 
     </div>
