@@ -1,0 +1,231 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "projectName": "ClassLibVideos",
+        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
+        "projectName": "SuperMuskler4000APITest",
+        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
+        "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
+              },
+              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
+                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
+        "projectName": "SuperMuskler4000GIFAPI",
+        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
+        "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
