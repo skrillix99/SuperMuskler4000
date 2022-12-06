@@ -75,7 +75,7 @@
 
         [TestMethod()]
         [DataRow("bi")]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void GetByMuscleWithWrongInput(string input)
         {
             //Arrange
