@@ -52,14 +52,19 @@
             <!--The list of different exercises, based off the above search-->
             <h1>Exercise List</h1>
             
-            <ul v-if="exercise_list.length > 0">
+            <ul id="padding_left_none" v-if="exercise_list.length > 0">
 
                 <li class="nodot" v-for="(exercise, index) in exercise_list">
                     <div>
-                        <div @click="exerciseToShow =index">{{exercise.name}}</div>
+                        <br>
+                                <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Dumbbell Bench Press'" src="https://im3.ezgif.com/tmp/ezgif-3-1b3f284d8f.gif" alt="">
+                                <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Pushups'" src="https://im3.ezgif.com/tmp/ezgif-3-2d4b72abbf.gif" alt="">
+                                <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
+                                <button v-bind:value="exercise.name">+</button>
                     </div>
                     
                     <div v-show="exerciseToShow == index">
+                        <div class="left_align">
                         <b>Type:</b> {{exercise.type}}
                         <br>
                         <b>Equipment:</b> {{exercise.equipment}}
@@ -67,6 +72,7 @@
                         <b>Difficulty:</b> {{exercise.difficulty}}
                         <br>
                         <b>Instructions:</b> {{exercise.instructions}}
+                        </div>
                     </div>
                 </li>
             </ul>
