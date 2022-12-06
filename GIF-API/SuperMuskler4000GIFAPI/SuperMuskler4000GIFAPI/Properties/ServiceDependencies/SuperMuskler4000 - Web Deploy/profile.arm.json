@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "SuperMuskler4000GIFAPI20221202132451",
+      "defaultValue": "SuperMuskler4000",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
