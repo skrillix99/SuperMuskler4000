@@ -2,7 +2,7 @@ console.log("Test")
 const baseURL = "https://api.api-ninjas.com/v1/exercises"
 
 
-const waifuURL = "https://api.waifu.im/search/?included_tags=maid"
+const gifURL = "https://supermuskler4000.azurewebsites.net/api/Videos/"
 
 
 Vue.createApp({
@@ -46,17 +46,18 @@ Vue.createApp({
             })
         },
 
-        GetGifs() {
-            console.log("Knap trykt på")
-            axios.get(waifuURL)
+        GetGifs(search_muscle) {
+            console.log("GetGifs trykket")
+            console.log(search_muscle)
+            uri = gifURL + search_muscle
+            console.log(uri)
+            axios.get(uri)
             .then(response => {
-                (this.info = response.data)
-                console.log(this.info)
-                this.src = this.info
-                console.log(this.src)
-                  //this.setImgSrc({Waifus: response.data.message})
+                
+                this.video_list = response.data
+                console.log(video_list)
+                
             })
-            console.log("GetGifs success")
         },
         
         
