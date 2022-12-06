@@ -11,14 +11,30 @@
     list-style: none;
 }
 
+.exercise_table {
+    width: 80%;
+    margin-left:10%;
+}
+
 .gif_exercise{
     display: inline;
-    width: 50%;
+    width: 100%;
 }
 
 .name_exercise{
     display: inline;
     margin-left: 3%;
+}
+
+.exercise_name_width{
+    width: 20%;
+}
+
+.exercise_gif_width{
+    width: 40%;
+}
+.exercise_plan_width{
+    width: 10%;
 }
 
 .left_align{

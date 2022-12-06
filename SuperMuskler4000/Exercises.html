@@ -23,7 +23,7 @@
         <div id="app">
         
          
-            <!--Prints a list of the different exercises, based off your selected search criteria-->
+            <!--Used to select the search criteria for the muscle group, so the exercises are for that muscle group-->
             <select v-model="search_muscle">
                 <option disabled hidden value="Choose your Muscle Group">Choose your Muscle Group</option>
                 <option value="abdominals">Abdominals</option>
@@ -45,24 +45,44 @@
 
             </select>
             <br>
-            <button class="btn btn-primary pushitdown" v-on:click="GetAllExercises(search_muscle)">Get all Exercises</button>
+            <!--When the button is pressed, it returns 10 different exercises based off of the above search criteria.-->
+            <button class="btn btn-primary pushitdown" v-on:click="GetAllExercises(search_muscle)">Get the Exercises</button>
             <br>
 
 
-            <!--The list of different exercises, based off the above search-->
+            <!--The list of different exercises, based off the above search criteria-->
             <h1>Exercise List</h1>
             
             <ul id="padding_left_none" v-if="exercise_list.length > 0">
 
+                <!--Used to put the gifs, exercise name and add button into tables, so they show up in equal spacing everywhere-->
                 <li class="nodot" v-for="(exercise, index) in exercise_list">
                     <div>
                         <br>
-                                <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Dumbbell Bench Press'" src="https://im3.ezgif.com/tmp/ezgif-3-1b3f284d8f.gif" alt="">
-                                <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Pushups'" src="https://im3.ezgif.com/tmp/ezgif-3-2d4b72abbf.gif" alt="">
-                                <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
-                                <button v-bind:value="exercise.name">+</button>
+                        <table class="exercise_table">
+                            <tr>
+                                <th class="exercise_gif_width">Exercise Example</th>
+                                <th class="exercise_name_width">Exercise Name</th>
+                                <th class="exercise_plan_width">Add to plan</th>
+                            </tr>
+                                <td>
+                                    <!--Only way we could find that lets us put gifs in front of every exercise. It only shows the gif if
+                                    the exercise name is the correct one. This way we keep the v-for loop, while still having a way to
+                                    uniquely identify the exercise-->
+                                    <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Dumbbell Bench Press'" src="https://im3.ezgif.com/tmp/ezgif-3-1b3f284d8f.gifhttps://im3.ezgif.com/tmp/ezgif-3-1b3f284d8f.gif" alt="">
+                                    <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Pushups'" src="https://im3.ezgif.com/tmp/ezgif-3-f408579384.gif" alt="">
+                                </td>
+                                <td>
+                                    <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
+                                </td>
+                                <td>
+                                        <button v-bind:value="exercise.name">+</button>
+                                </td>
+                                
+                        </table>
                     </div>
                     
+                    <!--The insctructions that pop up, when the exercise name or gif is clicked on-->
                     <div v-show="exerciseToShow == index">
                         <div class="left_align">
                         <b>Type:</b> {{exercise.type}}
@@ -76,6 +96,7 @@
                     </div>
                 </li>
             </ul>
+            <!--Message that shows up if there are no exercises-->
             <div v-else style="font-style: italic;">Please select a muscle group you wish to train</div>
         </div>
 
