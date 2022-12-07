@@ -6,11 +6,12 @@ SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096  # send 4096 bytes each time step
 
 # the ip address or hostname of the server, the receiver
-host = "192.168.14.135"
+host = "192.168.14.21"
 # the port, let's use 12000
 port = 12000
 # the name of file we want to send, make sure it exists
-filename = "home/pi/Desktop/testvideo.mp4"
+#filename = "/home/pi/Desktop/videotest.mp4"
+filename = "/home/pi/Desktop/video.h264"
 # get the file size
 filesize = os.path.getsize(filename)
 
