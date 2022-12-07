@@ -1,55 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <!--VUE-->
-    <script src="https://unpkg.com/vue@next"></script>
-    <!--Axios-->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperMuskler 4000</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
 </head>
-<body>
-    <div id="app">
-        <button class="btn btn-primary" v-on:click="GetAllExercises(search_muscle)">Get all Exercises</button>
-        <br>
+<body class="centerpls backcolour">
+    <h1>SuperMuskler4000</h1>
+    <h3 >Username</h3>
+    <input type="text">
+    <h3>Password</h3>
+    <input type="text">
+    <br>
+    <a class="btn btn-primary pushitdown" href="Exercises.html">Login</button>
+    <a class="btn btn-primary pushitdown">Create User</button> 
 
-        <select v-model="search_muscle">
-            <option disabled hidden value="Choose your Muscle Group">Choose your Muscle Group</option>
-            <option value="abdominals">Abdominals</option>
-            <option value="biceps">Biceps</option>
-            <option value="forearms">Forearms</option>
-        </select>
-
-        <h1>Exercise List</h1>
-            
-        <ul v-if="exercise_list.length > 0">
-
-        <li v-for="(exercise, index) in exercise_list">
-            <div>
-               <div @click="exerciseToShow =index">{{exercise.name}}</div>
-            </div>
-            <div v-show="exerciseToShow == index">
-              {{exercise.type}}
-              {{exercise.muscle}}
-              {{exercise.equipment}}
-              {{exercise.difficulty}}
-              {{exercise.instructions}}
-            </div>
-        </li>
-        </ul>
-        <div v-else style="font-style: italic;">No duathletes are registered
-        </div>
-        </ul>
-
-
-    </div>
-
-
-
-    <script src="js/index.js"></script>
 </body>
 </html>
