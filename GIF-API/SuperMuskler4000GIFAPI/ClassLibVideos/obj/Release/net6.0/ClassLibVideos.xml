@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibVideos</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibVideos.Video">
+            <summary>
+            This is the Model Class for Videos
+            </summary>
+        </member>
+        <member name="M:ClassLibVideos.Video.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:ClassLibVideos.Video.#ctor(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Constructor with 4 parameters
+            </summary>
+            <param name="id">The videos Id. Type int</param>
+            <param name="name">The videos name. Type string</param>
+            <param name="videolink">The link to the video. Type string</param>
+            <param name="muscleType">Muscletype of the exercise shown in the video. Type string</param>
+        </member>
+        <member name="P:ClassLibVideos.Video.Id">
+            <summary>
+            The Id property. Type string. Contains both get/set functionality
+            </summary>
+        </member>
+        <member name="P:ClassLibVideos.Video.Name">
+            <summary>
+            The name property. Type string. Contains both get/set functionality
+            </summary>
+        </member>
+        <member name="P:ClassLibVideos.Video.VideoLink">
+            <summary>
+            The video link property. Type string. Contains both get/set functionality
+            </summary>
+        </member>
+        <member name="P:ClassLibVideos.Video.MuscleType">
+            <summary>
+            The muscletype property. Type string. Contains both get/set functionality
+            </summary>
+        </member>
+    </members>
+</doc>
