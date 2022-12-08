@@ -42,6 +42,13 @@ Vue.createApp({
             })
         },
         
+        PostToPrivatePlan() {
+            uri = baseURL
+            axios({
+                method: "post",
+                url: ""
+            })
+        }
         
 
     }
