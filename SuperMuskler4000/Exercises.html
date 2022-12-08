@@ -84,12 +84,14 @@
                                     </tr>
                                         <td>
                                             <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
+                                            
                                         </td>
                                         <td>
                                                 <button v-bind:value="exercise.name">+</button>
                                         </td>
                                         
                                 </table>
+                                
                             </div>
                             
                             <!--The insctructions that pop up, when the exercise name is clicked on-->
@@ -104,6 +106,7 @@
                                     <b>Instructions:</b> {{exercise.instructions}}
                                     </div>
                             </div>
+                            <button class="btn btn-secondary">Learn more</button>
                             <hr>
                         </li>
                 </ul>
