@@ -18,10 +18,6 @@ Vue.createApp({
             statuscode: null,
             search_muscle: "Choose your Muscle Group",
             exerciseToShow: -1,
-            
-            info: null,
-            Waifus: [],
-            src: null
         }
     },
 
@@ -42,20 +38,6 @@ Vue.createApp({
             .then(response => {
                 
                 this.exercise_list = response.data
-                
-            })
-        },
-
-        GetGifs(search_muscle) {
-            console.log("GetGifs trykket")
-            console.log(search_muscle)
-            uri = gifURL + search_muscle
-            console.log(uri)
-            axios.get(uri)
-            .then(response => {
-                
-                this.video_list = response.data
-                console.log(video_list)
                 
             })
         },
