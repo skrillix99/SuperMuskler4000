@@ -21,12 +21,12 @@
         <div class="rowtest"> 
             <form action="" method="get">
                 <div class="columntest"> <!--float left with width of 33.33 to make space for 3 buttons-->
-                    <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                    <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                 </div>
             </form>
             <form action="" method="get">
                 <div class="columntest">
-                    <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                    <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                 </div>
             </form>
             <form action="" method="get">
@@ -74,7 +74,7 @@
                     <!--Used to put exercise name and add button into tables, so they show up in equal spacing everywhere, no matter how long its name is-->
                     <div>
                         <hr>
-                        <li class="nodot" v-for="(exercise, index) in exercise_list">
+                        <li class="nodot" v-for="(exercise, index) in exercise_list" @click="exerciseToShow = index">
                             <div>
                                 <br>
                                 <table class="exercise_table">

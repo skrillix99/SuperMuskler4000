@@ -65,7 +65,6 @@
 }
 .footer-btn:hover {
     color: #000;
-    background-color: #FFF387;
     border-color: #000;
 }
 .MakeProfileButtonsBigger {
@@ -84,4 +83,7 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color:#000;
+}
+.addBorderToButton {
+   border-right: 2px solid;
 }
