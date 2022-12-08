@@ -17,10 +17,24 @@
 </head>
 <body>
     <!--Menu buttons-->
-    <nav>
-        <a class="btn btn-success" href="Exercises.html">Exercises</a>
-        <a class="btn btn-success" href="Profile.html">Profile</a>
-        <a class="btn btn-success" href="index.html">Log Out</a>
+    <nav class="backcolourbuttonsNavBar"> <!--changes the background colour of the nav buttons to green-->
+        <div class="rowtest"> 
+            <form action="" method="get">
+                <div class="columntest"> <!--float left with width of 33.33 to make space for 3 buttons-->
+                    <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                </div>
+            </form>
+            <form action="" method="get">
+                <div class="columntest">
+                    <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                </div>
+            </form>
+            <form action="" method="get">
+                <div class="columntest">
+                    <input type="submit" formaction="index.html" value="Log Out" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                </div>
+            </form>
+        </div>
     </nav>
     <div class="centerpls pushitdown"> <!--Pushed the content down and center aligns-->
         <div id="app">
@@ -49,7 +63,7 @@
             </select>
             <br>
             <!--When the button is pressed, it returns 10 different exercises based off of the above search criteria.-->
-            <button class="btn btn-primary pushitdown" v-on:click="GetAllExercises(search_muscle)">Get the Exercises</button>
+            <button class="btn btn-primary pushitdown TextAlignInButtonNav" v-on:click="GetAllExercises(search_muscle)">Get the Exercises</button>
             <br>
 
 
