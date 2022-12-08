@@ -29,7 +29,7 @@
 }
 
 .exercise_group_box{
-    border: #000;
+    border-style: solid;
 }
 
 .left_align{
