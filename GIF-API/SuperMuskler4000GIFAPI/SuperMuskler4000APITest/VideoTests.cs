@@ -1,17 +1,25 @@
 namespace SuperMuskler4000APITest
 {
+    /// <summary>
+    /// A Test Class used to test Video Class functionality
+    /// </summary>
     [TestClass]
     public class VideoTests
     {
         private Video video;
         
+        /// <summary>
+        /// Method to initialize new Video object before each test
+        /// </summary>
         [TestInitialize]
         public void TestInit()
         {
             video = new Video();
         }
         
-        
+        /// <summary>
+        /// Tests get/set works properly ofr VideoLink property
+        /// </summary>
         [TestMethod]
         public void VideoLinkReturnsCorrectLink()
         {
@@ -25,7 +33,9 @@ namespace SuperMuskler4000APITest
             //Assert
             Assert.AreEqual(expectedLink, actualLink);
         }
-
+        /// <summary>
+        /// Tests get set/set works properly for Name property
+        /// </summary>
         [TestMethod]
         public void NameReturnsCorrectName()
         {
@@ -40,6 +50,9 @@ namespace SuperMuskler4000APITest
             Assert.AreEqual(expectedName, actualName);
         }
 
+        /// <summary>
+        /// Tests get/set works properly for Id property
+        /// </summary>
         [TestMethod]
         public void IdReturnsCorrectId()
         {
@@ -54,6 +67,9 @@ namespace SuperMuskler4000APITest
             Assert.AreEqual(expectedId, actualId);
         }
 
+        /// <summary>
+        /// /// Tests get/set works properly for MuscleType property
+        /// </summary>
         [TestMethod]
         public void MuscleTypeReturnsCorrectMuscleType()
         {

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Study Programs\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {}
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {}
   },
   "projects": {
-    "D:\\Study Programs\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Study Programs\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "projectUniqueName": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
         "projectName": "ClassLibVideos",
-        "projectPath": "D:\\Study Programs\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "D:\\Study Programs\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\obj\\",
+        "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alex1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
