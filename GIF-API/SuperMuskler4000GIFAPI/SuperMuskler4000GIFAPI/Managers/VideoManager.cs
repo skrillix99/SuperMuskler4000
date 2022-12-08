@@ -7,7 +7,7 @@ namespace SuperMuskler4000GIFAPI.Managers
     public class VideoManager
     {
         // stores the connectionstring to the database supermuskler4000 in the variable connectionString.
-        string connectionString = "Data Source=supermuskler4000server.database.windows.net;Initial Catalog=SuperMuskler4000;User ID=admin1;Password=Alexander1;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connectionString = "Data Source=supermuskler4000server.database.windows.net;Initial Catalog=SuperMuskler4000;User ID=admin1;Password=Alexander1;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         
         /// <summary>
         /// creates a list with videos where it get the data from the database and sortes them after mucletype, and if mucle type is null or empthy it throw an exception.
