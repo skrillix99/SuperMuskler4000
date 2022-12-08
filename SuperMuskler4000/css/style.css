@@ -16,25 +16,20 @@
     margin-left:10%;
 }
 
-.gif_exercise{
-    display: inline;
-    width: 100%;
-}
-
 .name_exercise{
     display: inline;
-    margin-left: 3%;
 }
 
 .exercise_name_width{
     width: 20%;
 }
 
-.exercise_gif_width{
-    width: 40%;
-}
 .exercise_plan_width{
     width: 10%;
+}
+
+.exercise_group_box{
+    border: #000;
 }
 
 .left_align{
