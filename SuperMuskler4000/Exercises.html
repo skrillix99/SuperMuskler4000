@@ -74,6 +74,8 @@
                     <!--Used to put exercise name into tables, so future features show up in equal spacing everywhere, no matter how long the exercise name is-->
                     <div>
                         <hr>
+                        <!--This v-for loop finds the exercises from exercise_list and has an index value, that is based off of the
+                        number of exercises in exercise_list. From here it saves index value in the vue.js data "exerciseToShow".-->
                         <li class="nodot" v-for="(exercise, index) in exercise_list" @click="exerciseToShow = index">
                             <div>
                                 <br>
@@ -90,7 +92,8 @@
                                 
                             </div>
                             
-                            <!--The insctructions that pop up, when the exercise name is clicked on-->
+                            <!--The insctructions that pop up, when the exercise name is clicked on. It works by using the v-show bool
+                                to only turn true for the exercise that has the same index as the exerciseToShow-->
                                 <div v-show="exerciseToShow == index">
                                     <div class="left_align">
                                     <b>Type:</b> {{exercise.type}}
