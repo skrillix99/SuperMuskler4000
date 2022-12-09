@@ -16,41 +16,41 @@ namespace SuperMuskler4000GIFAPI.Managers
         /// <returns></returns>
         /// <exception cref="ArgumentNullException"></exception>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        public List<Video> GetByMuscleType(string muscletype)
-        {
-            // throws an exception if mucle type is null or empthy.
-            if (muscletype.IsNullOrEmpty())
-            {
-                throw new ArgumentNullException("muscletype", "You must enter a muscletype");
-            }
-            // create the list of vidoes
-            List<Video> videoList = new List<Video>();
-            // creating the query, where it select mucletypes from supermuskler4000 database
-            string queryString = "select * from Supermusklervideoer where MuscleType = @muscletype";
+        //public List<Video> GetByMuscleType(string muscletype)
+        //{
+        //    // throws an exception if mucle type is null or empthy.
+        //    if (muscletype.IsNullOrEmpty())
+        //    {
+        //        throw new ArgumentNullException("muscletype", "You must enter a muscletype");
+        //    }
+        //    // create the list of vidoes
+        //    List<Video> videoList = new List<Video>();
+        //    // creating the query, where it select mucletypes from supermuskler4000 database
+        //    string queryString = "select * from Supermusklervideoer where MuscleType = @muscletype";
 
-            // establish connection to database using the connectionstring.
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // creating the command we send to the database.
-                SqlCommand command = new SqlCommand(queryString, connection);
-                command.Connection.Open();
-                command.Parameters.AddWithValue("@muscletype", muscletype.ToLower());
-                // crates the reading founktion for the database
-                SqlDataReader reader = command.ExecuteReader();
-                // here we read the data from the database and puts it in the video list
-                while (reader.Read())
-                {
-                    Video v = ReadVideo(reader);
-                    videoList.Add(v);
-                }
-            // tjeks if the video list is empthy
-            }
-            if (videoList.Count == 0)
-            {
-                throw new ArgumentOutOfRangeException("No Exercises found");
-            }
-            return videoList;
-        }
+        //    // establish connection to database using the connectionstring.
+        //    using (SqlConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        // creating the command we send to the database.
+        //        SqlCommand command = new SqlCommand(queryString, connection);
+        //        command.Connection.Open();
+        //        command.Parameters.AddWithValue("@muscletype", muscletype.ToLower());
+        //        // crates the reading founktion for the database
+        //        SqlDataReader reader = command.ExecuteReader();
+        //        // here we read the data from the database and puts it in the video list
+        //        while (reader.Read())
+        //        {
+        //            Video v = ReadVideo(reader);
+        //            videoList.Add(v);
+        //        }
+        //    // tjeks if the video list is empthy
+        //    }
+        //    if (videoList.Count == 0)
+        //    {
+        //        throw new ArgumentOutOfRangeException("No Exercises found");
+        //    }
+        //    return videoList;
+        //}
         /// <summary>
         /// Reads one row of data from the database and puts the data into a Video object
         /// </summary>

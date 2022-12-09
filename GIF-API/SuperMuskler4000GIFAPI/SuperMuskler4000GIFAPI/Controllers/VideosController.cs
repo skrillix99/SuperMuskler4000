@@ -14,27 +14,27 @@ namespace SuperMuskler4000GIFAPI.Controllers
         private VideoManager mgr = new VideoManager();
 
         // GET api/<VideosController>/biceps
-        [HttpGet]
-        [Route("{muscletype}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public IActionResult GetByMuscleType(string muscletype)
-        {
-            try
-            {
-                List<Video> listOfVideos = mgr.GetByMuscleType(muscletype);
-                return Ok(listOfVideos);
-            }
-            catch (ArgumentOutOfRangeException s)
-            {
-                return NotFound(s.Message);
-            }
-            catch(ArgumentNullException s)
-            {
-                return BadRequest(s.Message);
-            }
-        }
+        //[HttpGet]
+        //[Route("{muscletype}")]
+        //[ProducesResponseType(StatusCodes.Status200OK)]
+        //[ProducesResponseType(StatusCodes.Status400BadRequest)]
+        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        //public IActionResult GetByMuscleType(string muscletype)
+        //{
+        //    try
+        //    {
+        //        List<Video> listOfVideos = mgr.GetByMuscleType(muscletype);
+        //        return Ok(listOfVideos);
+        //    }
+        //    catch (ArgumentOutOfRangeException s)
+        //    {
+        //        return NotFound(s.Message);
+        //    }
+        //    catch(ArgumentNullException s)
+        //    {
+        //        return BadRequest(s.Message);
+        //    }
+        //}
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
