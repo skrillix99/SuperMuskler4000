@@ -4,35 +4,5 @@
         <name>SuperMuskler4000APITest</name>
     </assembly>
     <members>
-        <member name="T:SuperMuskler4000APITest.VideoTests">
-            <summary>
-            A Test Class used to test Video Class functionality
-            </summary>
-        </member>
-        <member name="M:SuperMuskler4000APITest.VideoTests.TestInit">
-            <summary>
-            Method to initialize new Video object before each test
-            </summary>
-        </member>
-        <member name="M:SuperMuskler4000APITest.VideoTests.VideoLinkReturnsCorrectLink">
-            <summary>
-            Tests get/set works properly ofr VideoLink property
-            </summary>
-        </member>
-        <member name="M:SuperMuskler4000APITest.VideoTests.NameReturnsCorrectName">
-            <summary>
-            Tests get set/set works properly for Name property
-            </summary>
-        </member>
-        <member name="M:SuperMuskler4000APITest.VideoTests.IdReturnsCorrectId">
-            <summary>
-            Tests get/set works properly for Id property
-            </summary>
-        </member>
-        <member name="M:SuperMuskler4000APITest.VideoTests.MuscleTypeReturnsCorrectMuscleType">
-            <summary>
-            /// Tests get/set works properly for MuscleType property
-            </summary>
-        </member>
     </members>
 </doc>
