@@ -61,9 +61,39 @@ namespace SuperMuskler4000GIFAPI.Managers
             Video v = new Video();
             v.Id = reader.GetInt32(0);
             v.Name = reader.GetString(1);
-            v.MuscleType = reader.GetString(2);
+           // v.MuscleType = reader.GetString(2);
             v.VideoLink = reader.GetString(3);
             return v;
+        }
+
+        public List<Video> GetAllVideos()
+        {
+            List<Video> videos = new List<Video>();
+
+            string queryString = "SELECT * FROM PrivateExerciseVideos";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Video b = ReadPrivateVideo(reader);
+                    videos.Add(b);
+                }
+            }
+            return videos;
+        }
+        private Video ReadPrivateVideo(SqlDataReader reader)
+        {
+            Video b = new Video();
+            b.Id = reader.GetInt32(0);
+            b.Name = reader.GetString(1);
+            b.VideoLink = reader.GetString(2);
+            return b;
         }
     }
 }
