@@ -34,9 +34,22 @@ namespace SuperMuskler4000GIFAPI.Controllers
             {
                 return BadRequest(s.Message);
             }
-            
-            
-            
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult GetAllVideos()
+        {
+            try
+            {
+                return Ok(mgr.GetAllVideos());
+            }
+            catch
+            {
+                return NotFound();
+            }
         }
 
     }

@@ -38,10 +38,5 @@
             The video link property. Type string. Contains both get/set functionality
             </summary>
         </member>
-        <member name="P:ClassLibVideos.Video.MuscleType">
-            <summary>
-            The muscletype property. Type string. Contains both get/set functionality
-            </summary>
-        </member>
     </members>
 </doc>

@@ -24,3 +24,17 @@ C:\Users\alex1\Source\Repos\skrillix99\SuperMuskler4000\GIF-API\SuperMuskler4000
 C:\Users\alex1\Source\Repos\skrillix99\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.xml
 C:\Users\alex1\Source\Repos\skrillix99\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.pdb
 C:\Users\alex1\Source\Repos\skrillix99\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ref\ClassLibVideos.dll
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\bin\Release\net6.0\ClassLibVideos.deps.json
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\bin\Release\net6.0\ClassLibVideos.dll
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\bin\Release\net6.0\ClassLibVideos.pdb
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\bin\Release\net6.0\ClassLibVideos.xml
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.csproj.AssemblyReference.cache
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.AssemblyInfoInputs.cache
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.AssemblyInfo.cs
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.csproj.CoreCompileInputs.cache
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.dll
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\refint\ClassLibVideos.dll
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.xml
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ClassLibVideos.pdb
+C:\Users\eqwoa\source\repos\SuperMuskler4000\GIF-API\SuperMuskler4000GIFAPI\ClassLibVideos\obj\Release\net6.0\ref\ClassLibVideos.dll

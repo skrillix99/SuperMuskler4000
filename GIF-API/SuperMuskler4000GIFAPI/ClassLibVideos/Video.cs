@@ -28,7 +28,7 @@
             Id = id;
             Name = name;
             VideoLink = videolink;
-            MuscleType = muscleType;
+        //    MuscleType = muscleType;
         }
 
 
@@ -50,7 +50,7 @@
         /// <summary>
         /// The muscletype property. Type string. Contains both get/set functionality
         /// </summary>
-        public string MuscleType { get; set; }
+       // public string MuscleType { get; set; }
 
 
         #endregion
