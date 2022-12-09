@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GIF-API",
+    "\\GIF-API\\SuperMuskler4000GIFAPI",
+    "\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest"
   ],
-  "SelectedNode": "\\SuperMuskler4000GIFAPI.sln",
+  "SelectedNode": "\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\ExercisePlanManagerTest.cs",
   "PreviewInSolutionExplorer": false
 }
