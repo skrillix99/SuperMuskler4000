@@ -37,7 +37,7 @@ filesize = int(filesize)
 # start receiving the file from the socket
 # and writing to the file stream
 progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
-with open("C:/Users/e/Desktop/testmappe/" + filename, "wb") as f:
+with open("C:/Users/Anders Petersen/Desktop/testmappe/" + filename, "wb") as f:
     while True:
         # read 1024 bytes from the socket (receive)
         bytes_read = client_socket.recv(BUFFER_SIZE)
