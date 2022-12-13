@@ -15,6 +15,7 @@ Vue.createApp({
             difficulty: "",
             instructions: "",
             exercise_list: [],
+            yourRecordings: [],
             statuscode: null,
             search_muscle: "Choose your Muscle Group",
             exerciseToShow: -1,
@@ -42,11 +43,12 @@ Vue.createApp({
             })
         },
         
-        PostToPrivatePlan() {
-            uri = baseURL
-            axios({
-                method: "post",
-                url: ""
+        GetVideos() {
+            uri = gifURL
+            axios.get(uri)
+            .then(response => {
+    
+                this.yourRecordings = response.data
             })
         }
         
