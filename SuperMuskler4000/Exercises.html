@@ -16,14 +16,29 @@
     <title>SuperMuskler 4000</title>
 </head>
 <body>
-    <nav>
-        <a class="btn btn-success" href="Exercises.html">Exercises</a>
-        <a class="btn btn-success" href="Profile.html">Profile</a>
-        <a class="btn btn-success" href="index.html">Log Out</a>
+    <!--Menu buttons-->
+    <nav class="backcolourbuttonsNavBar"> <!--changes the background colour of the nav buttons to green-->
+        <div class="rowtest"> 
+            <form action="">
+                <div class="columntest"> <!--float left with width of 33.33 to make space for 3 buttons-->
+                    <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
+                </div>
+            </form>
+            <form action="">
+                <div class="columntest">
+                    <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
+                </div>
+            </form>
+            <form action="">
+                <div class="columntest">
+                    <input type="submit" formaction="index.html" value="Log Out" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                </div>
+            </form>
+        </div>
     </nav>
-    <div class="centerpls pushitdown">
+    <div class="centerpls pushitdown"> <!--Pushed the content down and center aligns-->
         <div id="app">
-        
+        <br>
          
             <!--Used to select the search criteria for the muscle group, so the exercises are for that muscle group-->
             <select v-model="search_muscle">
@@ -48,56 +63,52 @@
             </select>
             <br>
             <!--When the button is pressed, it returns 10 different exercises based off of the above search criteria.-->
-            <button class="btn btn-primary pushitdown" v-on:click="GetAllExercises(search_muscle)">Get the Exercises</button>
+            <button class="btn btn-primary pushitdown TextAlignInButtonNav" id="align_exercise_btn" v-on:click="GetAllExercises(search_muscle)">Get the Exercises</button>
             <br>
 
 
             <!--The list of different exercises, based off the above search criteria-->
             <h1>Exercise List</h1>
-            <button v-on:click="GetGifs(search_muscle)">Load the gifs</button>
-            <ul id="padding_left_none" v-if="exercise_list.length > 0">
+                <ul id="padding_left_none" v-if="exercise_list.length > 0">
 
-                <!--Used to put the gifs, exercise name and add button into tables, so they show up in equal spacing everywhere-->
-                <li class="nodot" v-for="(exercise, index) in exercise_list">
+                    <!--Used to put exercise name into tables, so future features show up in equal spacing everywhere, no matter how long the exercise name is-->
                     <div>
-                        <br>
-                        <table class="exercise_table">
-                            <tr>
-                                <th class="exercise_gif_width">Exercise Example</th>
-                                <th class="exercise_name_width">Exercise Name</th>
-                                <th class="exercise_plan_width">Add to plan</th>
-                            </tr>
-                                <td>
-                                    <!--Only way we could find that lets us put gifs in front of every exercise. It only shows the gif if
-                                    the exercise name is the correct one. This way we keep the v-for loop, while still having a way to
-                                    uniquely identify the exercise-->
-                                        <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Dumbbell Bench Press'" src="https://i.kym-cdn.com/photos/images/original/001/319/550/71e.gif" alt="">
-                                        <img class="gif_exercise" @click="exerciseToShow =index" v-show="exercise.name == 'Pushups'" src="https://im3.ezgif.com/tmp/ezgif-3-f408579384.gif" alt="">
-                                </td>
-                                <td>
-                                    <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
-                                </td>
-                                <td>
-                                        <button v-bind:value="exercise.name">+</button>
-                                </td>
+                        <hr>
+                        <!--This v-for loop finds the exercises from exercise_list and has an index value, that is based off of the
+                        number of exercises in exercise_list. From here it saves index value in the vue.js data "exerciseToShow".-->
+                        <li class="nodot" v-for="(exercise, index) in exercise_list" @click="exerciseToShow = index">
+                            <div>
+                                <br>
+                                <table class="exercise_table">
+                                    <tr>
+                                        <th class="exercise_name_width">Exercise Name</th>
+                                    </tr>
+                                        <td>
+                                            <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
+                                            
+                                        </td>
+                                        
+                                </table>
                                 
-                        </table>
-                    </div>
-                    
-                    <!--The insctructions that pop up, when the exercise name or gif is clicked on-->
-                    <div v-show="exerciseToShow == index">
-                        <div class="left_align">
-                        <b>Type:</b> {{exercise.type}}
-                        <br>
-                        <b>Equipment:</b> {{exercise.equipment}}
-                        <br>
-                        <b>Difficulty:</b> {{exercise.difficulty}}
-                        <br>
-                        <b>Instructions:</b> {{exercise.instructions}}
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                            </div>
+                            
+                            <!--The insctructions that pop up, when the exercise name is clicked on. It works by using the v-show bool
+                                to only turn true for the exercise that has the same index as the exerciseToShow-->
+                                <div v-show="exerciseToShow == index">
+                                    <div class="left_align">
+                                    <b>Type:</b> {{exercise.type}}
+                                    <br>
+                                    <b>Equipment:</b> {{exercise.equipment}}
+                                    <br>
+                                    <b>Difficulty:</b> {{exercise.difficulty}}
+                                    <br>
+                                    <b>Instructions:</b> {{exercise.instructions}}
+                                    </div>
+                            </div>
+                            <button class="btn btn-secondary">Learn more</button>
+                            <hr>
+                        </li>
+                </ul>
             <!--Message that shows up if there are no exercises-->
             <div v-else style="font-style: italic;">Please select a muscle group you wish to train</div>
         </div>

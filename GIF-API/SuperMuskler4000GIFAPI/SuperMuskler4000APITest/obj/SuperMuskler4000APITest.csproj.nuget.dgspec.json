@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {}
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "projectUniqueName": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
         "projectName": "ClassLibVideos",
-        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
+        "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj",
         "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\obj\\",
+        "outputPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
+        "projectUniqueName": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
         "projectName": "SuperMuskler4000APITest",
-        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
+        "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\SuperMuskler4000APITest.csproj",
         "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\obj\\",
+        "outputPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000APITest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,11 +91,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
-                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
+              "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+                "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
               },
-              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
-                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj"
+              "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
+                "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj"
               }
             }
           }
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
+    "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
+        "projectUniqueName": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
         "projectName": "SuperMuskler4000GIFAPI",
-        "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
+        "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI.csproj",
         "packagesPath": "C:\\Users\\alex1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\obj\\",
+        "outputPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\SuperMuskler4000GIFAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -175,8 +175,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
-                "projectPath": "C:\\Users\\alex1\\source\\repos\\Alexevoke\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
+              "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj": {
+                "projectPath": "C:\\Users\\alex1\\Source\\Repos\\skrillix99\\SuperMuskler4000\\GIF-API\\SuperMuskler4000GIFAPI\\ClassLibVideos\\ClassLibVideos.csproj"
               }
             }
           }
@@ -202,6 +202,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [

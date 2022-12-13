@@ -5,7 +5,7 @@
     margin-top:10px;
 }
 .backcolour {
-    background-color: darkkhaki;
+    background-color: teal;
 }
 .nodot {
     list-style: none;
@@ -16,25 +16,25 @@
     margin-left:10%;
 }
 
-.gif_exercise{
-    display: inline;
-    width: 100%;
-}
-
 .name_exercise{
     display: inline;
-    margin-left: 3%;
+}
+.gif_exercise{
+    display: block;
+    width: 100%;
 }
 
 .exercise_name_width{
     width: 20%;
 }
 
-.exercise_gif_width{
-    width: 40%;
-}
 .exercise_plan_width{
     width: 10%;
+}
+
+#align_exercise_btn{
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .left_align{
@@ -55,6 +55,11 @@
 .backcolourbuttonsNavBar{
     background-color: #28A745;
 }
+.separateButton {
+    margin-left: 15px;
+}
+
+
 .rowtest:after {
     content: "";
     display: table;
@@ -70,7 +75,6 @@
 }
 .footer-btn:hover {
     color: #000;
-    background-color: #FFF387;
     border-color: #000;
 }
 .MakeProfileButtonsBigger {
@@ -89,4 +93,7 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color:#000;
+}
+.addBorderToButton {
+   border-right: 2px solid;
 }

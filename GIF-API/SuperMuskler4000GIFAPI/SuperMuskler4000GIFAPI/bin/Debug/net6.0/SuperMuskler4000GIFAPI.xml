@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperMuskler4000GIFAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.ReadVideo(Microsoft.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Reads one row of data from the database and puts the data into a Video object
+            </summary>
+            <param name="reader">Type SqlDataReader. Reads the data from the database</param>
+            <returns>Returns an object of the Video class</returns>
+        </member>
+    </members>
+</doc>
