@@ -6,7 +6,7 @@ import tqdm
 import os
 
 # device's IP address
-SERVER_HOST = "0.0.0.0"
+SERVER_HOST = "185.73.72.113"
 SERVER_PORT = 12000
 # receive 4096 bytes each time
 BUFFER_SIZE = 4096
@@ -37,7 +37,7 @@ filesize = int(filesize)
 # start receiving the file from the socket
 # and writing to the file stream
 progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
-with open("C:/Users/e/Desktop/testmappe/" + filename, "wb") as f:
+with open("C:/Users/Anders Petersen/Desktop/testmappe/" + filename, "wb") as f:
     while True:
         # read 1024 bytes from the socket (receive)
         bytes_read = client_socket.recv(BUFFER_SIZE)
