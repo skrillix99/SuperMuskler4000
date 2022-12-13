@@ -6,13 +6,15 @@ from picamera import PiCamera
 from time import sleep
 import string
 import random
+import os
+
 s = 10
 ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
 
 camera = PiCamera()
 #dateName = datetime.now.strftime("%m/%d/%Y")  # Used to make filename unique
 
-filename = f"/home/pi/Desktop/{ran}.mp4"
+filename = f"/home/pi/Desktop/{ran}.h264"
 
 
 camera.start_preview()
@@ -31,6 +33,18 @@ host = "192.168.14.239"
 # the port, let's use 12000
 port = 12000
 
+
+
+#TESTOBESTO
+os.system(f"ffmpeg -i {filename} {ran}.mp4")
+filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.mp4"
+
+
+
+
+
+
+
 # get the file size
 filesize = os.path.getsize(filename)
 
@@ -40,6 +54,7 @@ s = socket.socket()
 print(f"[+] Connecting to {host}:{port}")
 s.connect((host, port))
 print("[+] Connected.")
+
 
 # send the filename and filesize
 s.send(f"{filename}{SEPARATOR}{filesize}".encode())
