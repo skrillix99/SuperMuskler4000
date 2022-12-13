@@ -4,15 +4,6 @@
         <name>SuperMuskler4000GIFAPI</name>
     </assembly>
     <members>
-        <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.GetByMuscleType(System.String)">
-            <summary>
-            creates a list with videos where it get the data from the database and sortes them after mucletype, and if mucle type is null or empthy it throw an exception.
-            </summary>
-            <param name="muscletype"></param>
-            <returns></returns>
-            <exception cref="T:System.ArgumentNullException"></exception>
-            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
-        </member>
         <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.ReadVideo(Microsoft.Data.SqlClient.SqlDataReader)">
             <summary>
             Reads one row of data from the database and puts the data into a Video object
