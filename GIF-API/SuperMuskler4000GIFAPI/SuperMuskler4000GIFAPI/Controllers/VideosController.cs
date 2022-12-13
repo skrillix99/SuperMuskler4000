@@ -52,5 +52,13 @@ namespace SuperMuskler4000GIFAPI.Controllers
             }
         }
 
+
+        [HttpPost]
+        public void AddVideoToProfile([FromBody] Video video)
+        {
+                mgr.AddVideoToProfile(video);
+            
+        } 
+
     }
 }

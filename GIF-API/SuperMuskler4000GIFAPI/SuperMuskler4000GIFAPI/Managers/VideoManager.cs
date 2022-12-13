@@ -95,5 +95,28 @@ namespace SuperMuskler4000GIFAPI.Managers
             b.VideoLink = reader.GetString(2);
             return b;
         }
+
+        public void AddVideoToProfile(Video video)
+        {
+            string queryString = "insert into PrivateExerciseVideos Values (@name @videolink)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                command.Parameters.AddWithValue("@name", video.Name);
+                command.Parameters.AddWithValue("@videolink", video.VideoLink);
+
+                int rows = command.ExecuteNonQuery();
+                if (rows != 1)
+                {
+                    throw new ArgumentException("Exerciseplan er ikke oprettet");
+                }
+
+
+
+            }
+        }
+
     }
 }
