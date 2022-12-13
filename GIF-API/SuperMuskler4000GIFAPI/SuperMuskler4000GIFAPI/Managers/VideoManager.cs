@@ -98,7 +98,7 @@ namespace SuperMuskler4000GIFAPI.Managers
 
         public void AddVideoToProfile(Video video)
         {
-            string queryString = "insert into PrivateExerciseVideos Values (@name @videolink)";
+            string queryString = "insert into PrivateExerciseVideos Values (@name, @videolink)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
