@@ -6,6 +6,6 @@ camera = PiCamera()
 
 camera.start_preview()
 camera.start_recording("/home/pi/Desktop/videotest.h264")
-sleep(5)
+camera.wait_recording(1000)
 camera.stop_recording()
 camera.stop_preview()
