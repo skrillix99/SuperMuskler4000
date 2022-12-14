@@ -80,11 +80,8 @@
                             <div>
                                 <br>
                                 <table class="exercise_table">
-                                    <tr>
-                                        <th class="exercise_name_width">Exercise Name</th>
-                                    </tr>
                                         <td>
-                                            <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
+                                            <div class="name_exercise" @click="exerciseToShow =index"><b>{{exercise.name}}</b></div>
                                             
                                         </td>
                                         
@@ -104,6 +101,7 @@
                                     <br>
                                     <b>Instructions:</b> {{exercise.instructions}}
                                     </div>
+                                    <br>
                             </div>
                             <button class="btn btn-secondary">Learn more</button>
                             <hr>
