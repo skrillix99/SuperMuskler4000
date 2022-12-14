@@ -18,17 +18,13 @@
     <div> <!--updated navigation bar-->
         <nav class="backcolourbuttonsNavBar">
             <div class="rowtest">
-                <form action="" method="get">
+                
                     <div class="columntest">
                         <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
                     </div>
-                </form>
-                <form action="" method="get">
                     <div class="columntest">
                         <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
                     </div>
-                </form>
-                <form action="" method="get">
                     <div class="columntest">
                         <input type="submit" formaction="index.html" value="Log Out" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
                     </div>
@@ -36,15 +32,16 @@
             </div>
         </nav>
     </div>
+    <!--Basic profile information to give the idea of a profile page-->
     <div>
         <p class="pushitdown">Name: Kate Fransen</p>
         <p>Email: KateFransen@gmail.com</p>
     </div>
     <br>
     <br>
-
+    
+    <!--Gets videofiles from database on button click through a for loop-->
     <button class="btn btn-primary pushitdown TextAlignInButtonNav" id="align_exercise_btn" v-on:click="GetVideos()">View your recordings</button>
-
     <ul id="padding_left_none" v-if="yourRecordings.length > 0">
         <hr>
             <li class="nodot" v-for="(recordings, index) in yourRecordings">
