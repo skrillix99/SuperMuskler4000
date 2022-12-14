@@ -13,13 +13,6 @@ s = 10
 ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
 
 camera = PiCamera()
-<<<<<<< HEAD
-#dateName = datetime.now.strftime("%m/%d/%Y")  # Used to make filename unique
-
-filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.h264"
-=======
->>>>>>> 128d6dcaa815097cc803f13b5157cd74b0e0e8f5
-
 filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.h264"
 
 # Camera records the file and saves it at filename location
@@ -45,10 +38,6 @@ port = 12000
 # recording from .h264 to .mp4 and makes the rest of the code use the .mp4 version as filename
 os.system(f"ffmpeg -i {filename} {ran}.mp4")
 filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.mp4"
-
-
-
-
 
 
 
