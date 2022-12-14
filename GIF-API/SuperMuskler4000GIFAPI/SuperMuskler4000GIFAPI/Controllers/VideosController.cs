@@ -36,6 +36,10 @@ namespace SuperMuskler4000GIFAPI.Controllers
         //    }
         //}
 
+        /// <summary>
+        /// Try Catch To check for errors on our GetAllVideos
+        /// </summary>
+        /// <returns>returns status codes based on input given (200 OK, 400 Bad Request, 404 Not Found)</returns>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -53,6 +57,10 @@ namespace SuperMuskler4000GIFAPI.Controllers
         }
 
 
+        /// <summary>
+        /// Post Method to add profile videos to the database through our manager
+        /// </summary>
+        /// <param name="video"></param>
         [HttpPost]
         public void AddVideoToProfile([FromBody] Video video)
         {
