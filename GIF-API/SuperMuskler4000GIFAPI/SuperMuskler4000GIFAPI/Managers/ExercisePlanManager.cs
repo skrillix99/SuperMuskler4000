@@ -8,6 +8,10 @@ namespace SuperMuskler4000GIFAPI.Managers
     {
         private string connectionString = "Data Source=supermuskler4000server.database.windows.net;Initial Catalog=SuperMuskler4000;User ID=admin1;Password=Alexander1;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
+        /// <summary>
+        /// selects all data from exerciseplan table with SELECT *
+        /// </summary>
+        /// <returns>data from exerciseplan</returns>
         public List<ExercisePlan> GetExercisePlan()
         {
             
@@ -30,6 +34,13 @@ namespace SuperMuskler4000GIFAPI.Managers
             return PlanList;
         }
 
+        /// <summary>
+        /// Adds exercise to personal exercise plan by doing a get request on the current plan and checking if the result is there or not
+        /// if it exists already it throws argument exception, else it runs the querystring and inserts the data into Exerciseplan
+        /// </summary>
+        /// <param name="exercise"></param>
+        /// <returns>new object in Exerciseplan table</returns>
+        /// <exception cref="ArgumentException"></exception>
         public ExercisePlan AddExercisePlan(ExercisePlan exercise)
         {
             List <ExercisePlan> PlanList = GetExercisePlan();
