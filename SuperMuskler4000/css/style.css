@@ -19,6 +19,10 @@
 .name_exercise{
     display: inline;
 }
+.gif_exercise{
+    display: block;
+    width: 100%;
+}
 
 .exercise_name_width{
     width: 20%;

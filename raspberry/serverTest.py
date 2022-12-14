@@ -1,12 +1,13 @@
 """
 Server receiver of the file
 """
+# This code is to be run on your PC, so you can receive the file that will be sent from the raspberry pi
 import socket
 import tqdm
 import os
 
 # device's IP address
-SERVER_HOST = "185.73.72.113"
+SERVER_HOST = "0.0.0.0"  # Keep it at 0.0.0.0
 SERVER_PORT = 12000
 # receive 4096 bytes each time
 BUFFER_SIZE = 4096
@@ -37,7 +38,9 @@ filesize = int(filesize)
 # start receiving the file from the socket
 # and writing to the file stream
 progress = tqdm.tqdm(range(filesize), f"Receiving {filename}", unit="B", unit_scale=True, unit_divisor=1024)
-with open("C:/Users/Anders Petersen/Desktop/testmappe/" + filename, "wb") as f:
+
+# Here you write the file path to the folder you want to save to
+with open("C:/Users/Anders Petersen/Desktop/videomappepc/" + filename, "wb") as f:
     while True:
         # read 1024 bytes from the socket (receive)
         bytes_read = client_socket.recv(BUFFER_SIZE)
@@ -54,3 +57,13 @@ with open("C:/Users/Anders Petersen/Desktop/testmappe/" + filename, "wb") as f:
 client_socket.close()
 # close the server socket
 s.close()
+
+# The below part allows us to save the filepath into our Azure Database
+import requests
+
+url = 'https://supermuskler4000.azurewebsites.net/api/Videos/'
+myjson = {"Name": "" + filename,
+          "VideoLink": "C:/Users/Anders Petersen/Desktop/videomappepc/" + filename
+            }
+
+x = requests.post(url, json = myjson)
