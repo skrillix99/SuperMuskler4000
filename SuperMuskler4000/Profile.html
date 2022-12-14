@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="referer" content="no-referer">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+        <!--VUE-->
+        <script src="https://unpkg.com/vue@next"></script>
+        <!--Axios-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div> <!--updated-->
+<div id="app">
+    <div> <!--updated navigation bar-->
         <nav class="backcolourbuttonsNavBar">
             <div class="rowtest">
                 <form action="" method="get">
@@ -36,10 +42,29 @@
     </div>
     <br>
     <br>
-    <div class="backcolourbuttons"> <!--2 buttons to navigate into the subsites plan.html and videos.html-->
-        <a class="btn btn-primary fullrowbutton MakeProfileButtonsBigger" href="Plan.html">Plan</a>
-        <hr> <!-- line modified in style.css to make it larger to have a clearer view of separation of the 2 buttons-->
-        <a class="btn btn-primary fullrowbutton MakeProfileButtonsBigger" href="Videos.html">Videos</a>
-    </div>
+
+    <button class="btn btn-primary pushitdown TextAlignInButtonNav" id="align_exercise_btn" v-on:click="GetVideos()">View your recordings</button>
+
+    <ul id="padding_left_none" v-if="yourRecordings.length > 0">
+        <hr>
+            <li class="nodot" v-for="(recordings, index) in yourRecordings">
+                <div>
+                    <br>
+                        <table class="exercise_table">
+                            <td>
+                                <h2 class="centerpls">{{recordings.name}}
+                                </h2>
+                                    <video loop autoplay v-bind:src="recordings.videoLink" class="gif_exercise" ></video>
+                                    
+                                            
+                            </td>                                    
+                        </table>  
+                        <hr>       
+                </div>
+           </li>
+        <hr>
+    </ul>
+</div>
+<script src="js/index.js"></script>
 </body>
 </html>
