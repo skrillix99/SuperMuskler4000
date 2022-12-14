@@ -1,3 +1,4 @@
+# Code inspired from https://www.thepythoncode.com/article/send-receive-files-using-sockets-python
 import socket
 import tqdm
 import os
@@ -6,17 +7,16 @@ from picamera import PiCamera
 from time import sleep
 import string
 import random
-import os
 
+# Generates a random text string on 10 characters, that we use to name our files
 s = 10
 ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
 
 camera = PiCamera()
-#dateName = datetime.now.strftime("%m/%d/%Y")  # Used to make filename unique
 
-filename = f"/home/pi/Desktop/{ran}.h264"
+filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.h264"
 
-
+# Camera records the file and saves it at filename location
 camera.start_preview()
 camera.start_recording(filename)
 sleep(5)
@@ -28,14 +28,15 @@ camera.stop_preview()
 SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096  # send 4096 bytes each time step
 
-# the ip address or hostname of the server, the receiver
-host = "192.168.14.239"
+# the ip address or hostname of the server, the receiver. (Your server's IP)
+host = "192.168.14.239" #Currently using Anders'
 # the port, let's use 12000
 port = 12000
 
 
 
-#TESTOBESTO
+# This executes a terminal command that uses the ffmpeg program on the pi, which converts our 
+# recording from .h264 to .mp4 and makes the rest of the code use the .mp4 version as filename
 os.system(f"ffmpeg -i {filename} {ran}.mp4")
 filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.mp4"
 
