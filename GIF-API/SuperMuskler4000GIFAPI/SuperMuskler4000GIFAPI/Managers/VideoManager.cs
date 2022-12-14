@@ -66,6 +66,10 @@ namespace SuperMuskler4000GIFAPI.Managers
             return v;
         }
 
+        /// <summary>
+        /// Selects all the data in our PrivateExerciseVideos table through sql querystrings. used to make a list of videos created by the user
+        /// </summary>
+        /// <returns>returns a list of videos created by the user, that exists in our azure database</returns>
         public List<Video> GetAllVideos()
         {
             List<Video> videos = new List<Video>();
@@ -96,9 +100,15 @@ namespace SuperMuskler4000GIFAPI.Managers
             return b;
         }
 
+        /// <summary>
+        /// Adds our video recording into the database through sql insert into with values name, and video link
+        /// throws ArgumentException if it didnt get created
+        /// </summary>
+        /// <param name="video"></param>
+        /// <exception cref="ArgumentException"></exception>
         public void AddVideoToProfile(Video video)
         {
-            string queryString = "insert into PrivateExerciseVideos Values (@name @videolink)";
+            string queryString = "insert into PrivateExerciseVideos Values (@name, @videolink)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

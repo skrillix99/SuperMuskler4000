@@ -54,3 +54,12 @@ with open("C:/Users/Anders Petersen/Desktop/testmappe/" + filename, "wb") as f:
 client_socket.close()
 # close the server socket
 s.close()
+
+import requests
+
+url = 'https://supermuskler4000.azurewebsites.net/api/Videos/'
+myjson = {"Name": "Biceps",
+          "VideoLink": "padoru.mp4"
+            }
+
+x = requests.post(url, json = myjson)
