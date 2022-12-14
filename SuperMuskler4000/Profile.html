@@ -16,17 +16,21 @@
 <body>
 <div id="app">
     <div> <!--updated navigation bar-->
-        <nav class="backcolourbuttonsNavBar">
-            <div class="rowtest">
-                
-                    <div class="columntest">
+        <nav class="backcolourbuttonsNavBar"> <!--changes the background colour of the nav buttons to green-->
+            <div class="rowtest"> 
+                <form action="">
+                    <div class="columntest"> <!--float left with width of 33.33 to make space for 3 buttons-->
                         <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                     </div>
+                </form>
+                <form action="">
                     <div class="columntest">
                         <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                     </div>
+                </form>
+                <form action="">
                     <div class="columntest">
-                        <input type="submit" formaction="index.html" value="Log Out" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
+                        <input type="submit" formaction="index.html" value="Log Out" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
                     </div>
                 </form>
             </div>
@@ -34,14 +38,11 @@
     </div>
     <!--Basic profile information to give the idea of a profile page-->
     <div class="centerpls">
-        <p class="pushitdown">Name: Kate Fransen</p>
-        <p>Email: KateFransen@gmail.com</p>
-    
-        <br>
-        <br>
+        <p class="pushitdown"><b>Name:</b> Kate Fransen</p>
+        <p><b>Email:</b> KateFransen@gmail.com</p>
     
         <!--Gets videofiles from database on button click through a for loop-->
-        <button class="btn btn-primary pushitdown TextAlignInButtonNav" id="align_exercise_btn" v-on:click="GetVideos()">View your recordings</button>
+        <button class="btn btn-primary pushitdown TextAlignInButtonNav" v-on:click="GetVideos()">View your recordings</button>
     </div>
     <ul id="padding_left_none" v-if="yourRecordings.length > 0">
         <hr>
