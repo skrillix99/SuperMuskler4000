@@ -30,8 +30,18 @@ namespace SuperMuskler4000GIFAPI.Managers
             return PlanList;
         }
 
-        public void AddExercisePlan(ExercisePlan exercise)
+        public ExercisePlan AddExercisePlan(ExercisePlan exercise)
         {
+            List <ExercisePlan> PlanList = GetExercisePlan();
+
+            if(PlanList.Exists(e => e.Name == exercise.Name))
+            {
+                throw new ArgumentException();
+            }
+
+
+
+
             string queryString = "insert into Exerciseplan Values (@name)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -49,6 +59,8 @@ namespace SuperMuskler4000GIFAPI.Managers
 
 
             }
+
+            return exercise;
         }
 
         private ExercisePlan ReadPlan(SqlDataReader reader)

@@ -25,9 +25,18 @@ namespace SuperMuskler4000GIFAPI.Controllers
 
         // POST api/<ExercisePlansController>
         [HttpPost]
-        public void Post([FromBody] ExercisePlan exerciseplan)
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Post([FromBody] ExercisePlan exerciseplan)
         {
-            _planmgr.AddExercisePlan(exerciseplan);
+            try
+            {
+               return Ok(_planmgr.AddExercisePlan(exerciseplan));
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         
