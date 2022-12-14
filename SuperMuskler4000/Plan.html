@@ -37,14 +37,15 @@
             <a class="btn btn-warning TextAlignInButton skaler footer-btn" href="Profile.html">Back</a>
         </div>
 
-
+        <!--prints list of chosen exercises on button click by running vueJS method GetPersonalList throuh a for each loop-->
         <div class="centerpls">
         <br>
             <button class="btn btn-primary pushitdown TextAlignInButtonNav columntest" id="exerciselistbtn" v-on:click="GetPersonalList">View your exercise List</button>
         </div>
-        
+        <!--checks with if statement the length to see if any data exists in the database-->        
         <ul id="padding_left_none" v-if="YourExerciseList.length > 0">
             
+            <!--loops through VueJS YourExerciseList to print out the information below-->
                 <li class="nodot" v-for="(exercises, index) in YourExerciseList">
                     <div>
                         
