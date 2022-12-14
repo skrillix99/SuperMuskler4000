@@ -76,18 +76,20 @@
                         <hr>
                         <!--This v-for loop finds the exercises from exercise_list and has an index value, that is based off of the
                         number of exercises in exercise_list. From here it saves index value in the vue.js data "exerciseToShow".-->
-                        <li class="nodot" v-for="(exercise, index) in exercise_list" @click="exerciseToShow = index">
+                        <li class="nodot" v-for="(exercise, index) in exercise_list">
                             <div>
                                 <br>
                                 <table class="exercise_table">
                                     <tr>
-                                        <th class="exercise_name_width">Exercise Name</th>
+                                        <th class="exercise_name_width"> <div class="name_exercise" @click="exerciseToShow =index"><b>{{exercise.name}}</b></div></th>
+                                        <th class="exercise_plan_width">Add to plan</th>
                                     </tr>
+                                    <td>
+                                        <button class="btn btn-secondary name_exercise" v-show="exerciseToShow != index" @click="exerciseToShow = index">Learn more</button>
+                                    </td>
                                         <td>
-                                            <div class="name_exercise" @click="exerciseToShow =index">{{exercise.name}}</div>
-                                            
+                                            <button class="plus_btn btn btn-primary" @click="PostVideos(exercise.name)">+</button>
                                         </td>
-                                        
                                 </table>
                                 
                             </div>
@@ -104,8 +106,9 @@
                                     <br>
                                     <b>Instructions:</b> {{exercise.instructions}}
                                     </div>
+                                    <br>
                             </div>
-                            <button class="btn btn-secondary">Learn more</button>
+                            
                             <hr>
                         </li>
                 </ul>

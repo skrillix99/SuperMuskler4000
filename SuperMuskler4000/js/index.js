@@ -3,6 +3,7 @@ const baseURL = "https://api.api-ninjas.com/v1/exercises"
 
 
 const gifURL = "https://supermuskler4000.azurewebsites.net/api/Videos/"
+const ExerciseURL = "https://supermuskler4000.azurewebsites.net/api/ExercisePlans/"
 
 
 Vue.createApp({
@@ -50,8 +51,19 @@ Vue.createApp({
     
                 this.yourRecordings = response.data
             })
-        }
+        },
         
+        PostVideos(name) {
+            uri =ExerciseURL
+            axios({
+                method: 'post',
+                url: uri,
+                data: {
+                    Name: name
+                }
+
+            })
+        }
 
     }
 }).mount("#app")
