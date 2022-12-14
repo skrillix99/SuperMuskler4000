@@ -14,7 +14,7 @@ ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
 camera = PiCamera()
 #dateName = datetime.now.strftime("%m/%d/%Y")  # Used to make filename unique
 
-filename = f"/home/pi/Desktop/{ran}.h264"
+filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.h264"
 
 
 camera.start_preview()
