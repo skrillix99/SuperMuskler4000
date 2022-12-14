@@ -76,7 +76,9 @@ Vue.createApp({
             uri = ExerciseURL
             axios.get(uri) 
             .then(response => {
+                console.log("før data")
                 this.YourExerciseList = response.data
+                console.log(this.YourExerciseList)
             })
         },
 

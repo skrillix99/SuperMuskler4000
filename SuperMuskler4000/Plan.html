@@ -37,21 +37,25 @@
             <a class="btn btn-warning TextAlignInButton skaler footer-btn" href="Profile.html">Back</a>
         </div>
 
+
         <div class="centerpls">
-        
+        <br>
             <!--Gets videofiles from database on button click through a for loop-->
-            <button class="btn btn-primary pushitdown TextAlignInButtonNav" v-on:click="GetPersonalList()">View your exercise List</button>
+            <button class="btn btn-primary pushitdown TextAlignInButtonNav columntest" id="exerciselistbtn" v-on:click="GetPersonalList">View your exercise List</button>
         </div>
+        
         <ul id="padding_left_none" v-if="YourExerciseList.length > 0">
-            <hr>
+            
                 <li class="nodot" v-for="(exercises, index) in YourExerciseList">
                     <div>
+                        
                         <br>
-                            <table class="exercise_table">
+                            <table class="exercise_table" id="blackLine">
                                 <td>
-                                    <h2 class="centerpls">{{exercises.name}}
+                                    
+                                    <h2 class="centerpls" @click="exerciseToShow =index">{{exercises.name}}
                                     </h2>
-                                        
+                                    <button class="btn btn-secondary name_exercise" v-show="exerciseToShow != index" @click="exerciseToShow = index">Learn more</button>
                                                 
                                 </td>                                    
                             </table>  
@@ -60,13 +64,13 @@
                                 to only turn true for the exercise that has the same index as the exerciseToShow-->
                             <div v-show="exerciseToShow == index">
                                 <div class="left_align">
-                                    <b>Type:</b> {{exercise.type}}
+                                    <b>Type:</b> {{exercises.type}}
                                     <br>
-                                    <b>Equipment:</b> {{exercise.equipment}}
+                                    <b>Equipment:</b> {{exercises.equipment}}
                                     <br>
-                                    <b>Difficulty:</b> {{exercise.difficulty}}
+                                    <b>Difficulty:</b> {{exercises.difficulty}}
                                     <br>
-                                    <b>Instructions:</b> {{exercise.instructions}}
+                                    <b>Instructions:</b> {{exercises.instructions}}
                                 </div>
                                 <br>
                             </div>
