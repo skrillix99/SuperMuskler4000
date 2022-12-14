@@ -1,6 +1,28 @@
 import socket
 import tqdm
 import os
+from datetime import datetime
+from picamera import PiCamera
+from time import sleep
+import string
+import random
+
+s = 10 #Number of characters in the filename string
+ran = ''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
+
+camera = PiCamera()
+
+
+filepath = f"/home/pi/Desktop/{ran}.h264"
+filename = str(filepath)
+
+camera.start_preview()
+camera.start_recording(filename)
+sleep(5)
+camera.stop_recording()
+camera.stop_preview()
+
+
 
 SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096  # send 4096 bytes each time step
@@ -9,9 +31,7 @@ BUFFER_SIZE = 4096  # send 4096 bytes each time step
 host = "192.168.14.239"
 # the port, let's use 12000
 port = 12000
-# the name of file we want to send, make sure it exists
-#filename = "/home/pi/Desktop/videotest.mp4"
-filename = "/home/pi/Desktop/videotest.h264"
+
 # get the file size
 filesize = os.path.getsize(filename)
 
