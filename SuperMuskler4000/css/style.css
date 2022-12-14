@@ -12,13 +12,24 @@
 }
 
 .exercise_table {
-    width: 80%;
+    width: 90%;
     margin-left:10%;
+}
+.recording_table {
+    width: 80%;
+    margin-left: 10%;
 }
 
 .name_exercise{
     display: inline;
+    margin-left: 30%;
 }
+
+.plus_btn{
+    width: 88px;
+    
+}
+
 .gif_exercise{
     display: block;
     width: 100%;
