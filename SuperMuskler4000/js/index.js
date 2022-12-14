@@ -6,6 +6,7 @@ const gifURL = "https://supermuskler4000.azurewebsites.net/api/Videos/"
 const ExerciseURL = "https://supermuskler4000.azurewebsites.net/api/ExercisePlans/"
 
 
+
 Vue.createApp({
     data() {
         return {
@@ -17,6 +18,7 @@ Vue.createApp({
             instructions: "",
             exercise_list: [],
             yourRecordings: [],
+            YourExerciseList: [],
             statuscode: null,
             search_muscle: "Choose your Muscle Group",
             exerciseToShow: -1,
@@ -53,17 +55,32 @@ Vue.createApp({
             })
         },
         
-        PostVideos(name) {
+        PostExercises(name, type, muscle, equipment, difficulty, instructions) {
             uri =ExerciseURL
             axios({
                 method: 'post',
                 url: uri,
                 data: {
-                    Name: name
+                    Name: name,
+                    Type: type,
+                    Muscle: muscle,
+                    Equipment: equipment,
+                    Difficulty: difficulty,
+                    Instructions: instructions
                 }
 
             })
-        }
+        },
+
+        GetPersonalList() {
+            uri = ExerciseURL
+            axios.get(uri) 
+            .then(response => {
+                this.YourExerciseList = response.data
+            })
+        },
+
+
 
     }
 }).mount("#app")

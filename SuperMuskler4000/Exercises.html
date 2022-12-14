@@ -88,7 +88,7 @@
                                         <button class="btn btn-secondary name_exercise" v-show="exerciseToShow != index" @click="exerciseToShow = index">Learn more</button>
                                     </td>
                                         <td>
-                                            <button class="plus_btn btn btn-primary" @click="PostVideos(exercise.name)">+</button>
+                                            <button class="plus_btn btn btn-primary" @click="PostExercises(exercise.name, exercise.type, exercise.muscle, exercise.equipment, exercise.different, exercise.instructions)">+</button>
                                         </td>
                                 </table>
                                 
@@ -99,6 +99,8 @@
                                 <div v-show="exerciseToShow == index">
                                     <div class="left_align">
                                     <b>Type:</b> {{exercise.type}}
+                                    <br>
+                                    <b>Muscle Type:</b> {{exercise.muscle}}
                                     <br>
                                     <b>Equipment:</b> {{exercise.equipment}}
                                     <br>

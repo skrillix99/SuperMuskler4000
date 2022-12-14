@@ -42,14 +42,18 @@ namespace SuperMuskler4000GIFAPI.Managers
 
 
 
-            string queryString = "insert into Exerciseplan Values (@name)";
+            string queryString = "insert into Exerciseplan Values (@name, @type, @muscletype, @equipment, @difficulty, @instructions)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.Parameters.AddWithValue("@name", exercise.Name);
-
+                command.Parameters.AddWithValue("@type", exercise.Type);
+                command.Parameters.AddWithValue("@muscletype", exercise.MuscleType);
+                command.Parameters.AddWithValue("@equipment", exercise.Equipment);
+                command.Parameters.AddWithValue("@difficulty", exercise.Difficulty);
+                command.Parameters.AddWithValue("@instructions", exercise.Instructions);
                 int rows = command.ExecuteNonQuery();
                 if (rows != 1)
                 {
@@ -67,6 +71,11 @@ namespace SuperMuskler4000GIFAPI.Managers
         {
             ExercisePlan p = new ExercisePlan();
             p.Name = reader.GetString(0);
+            p.Type = reader.GetString(1);
+            p.MuscleType = reader.GetString(2);
+            p.Equipment = reader.GetString(3);
+            p.Difficulty = reader.GetString(4);
+            p.Instructions = reader.GetString(5);
             return p;
         }
 
