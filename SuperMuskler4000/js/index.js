@@ -35,6 +35,7 @@ Vue.createApp({
     },
 
     methods: {
+        //accesses our 3rd part api through api key to pull different exercise types down for the user to sort through
         GetAllExercises(search_muscle) {
 
             uri = baseURL + "?muscle=" + search_muscle
@@ -45,7 +46,7 @@ Vue.createApp({
                 
             })
         },
-        
+        //gets videos from our database to show in our profile.html
         GetVideos() {
             uri = gifURL
             axios.get(uri)
@@ -54,7 +55,7 @@ Vue.createApp({
                 this.yourRecordings = response.data
             })
         },
-        
+        //Posts exercises with the given values name, type, muscle, equipment, difficulty, instructions. sends the data into our database for further use in our getall
         PostExercises(name, type, muscle, equipment, difficulty, instructions) {
             uri =ExerciseURL
             axios({
@@ -71,7 +72,7 @@ Vue.createApp({
 
             })
         },
-
+        // Makes a call to our api and gets all exercises in the exerciseplan table
         GetPersonalList() {
             uri = ExerciseURL
             axios.get(uri) 
