@@ -56,7 +56,7 @@ Vue.createApp({
             })
         },
         //Posts exercises with the given values name, type, muscle, equipment, difficulty, instructions. sends the data into our database for further use in our getall
-        PostExercises(name, type, muscle, equipment, difficulty, instructions) {
+        PostExercises(name, type, muscleType, equipment, difficulty, instructions) {
             uri =ExerciseURL
             axios({
                 method: 'post',
@@ -64,7 +64,7 @@ Vue.createApp({
                 data: {
                     Name: name,
                     Type: type,
-                    Muscle: muscle,
+                    MuscleType: muscleType,
                     Equipment: equipment,
                     Difficulty: difficulty,
                     Instructions: instructions
