@@ -634,6 +634,9 @@
         }
       },
       "ClassLibVideos/1.0.0": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.0.1"
+        },
         "runtime": {
           "ClassLibVideos.dll": {}
         }

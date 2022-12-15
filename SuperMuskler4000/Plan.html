@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <!--VUE-->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <nav class="backcolourbuttonsNavBar"> <!--changes the background colour of the nav buttons to green-->
-            <div class="rowtest"> 
+    <div id="app">
+        <nav class="backcolourbuttonsNavBar">
+            <div class="rowtest">
                 <form action="" method="get">
-                    <div class="columntest"> <!--float left with width of 33.33 to make space for 3 buttons-->
-                        <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                    <div class="columntest">
+                        <input type="submit" formaction="Exercises.html" value="Exercises" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                     </div>
                 </form>
                 <form action="" method="get">
                     <div class="columntest">
-                        <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav">
+                        <input type="submit" formaction="Profile.html" value="Profile" class="btn btn-success skaler footer-btn TextAlignInButtonNav addBorderToButton">
                     </div>
                 </form>
                 <form action="" method="get">
@@ -29,8 +33,57 @@
                 </form>
             </div>
         </nav>
-    <div class="rowtest columntest">
-        <a class="btn btn-warning TextAlignInButton skaler footer-btn" href="Profile.html">Back</a> <!--back button with different colour so you can see the difference, used to go 1 page back-->
+        <div class="rowtest columntest">
+            <a class="btn btn-warning TextAlignInButton skaler footer-btn" href="Profile.html">Back</a>
+        </div>
+
+        <!--prints list of chosen exercises on button click by running vueJS method GetPersonalList throuh a for each loop-->
+        <div class="centerpls">
+        <br>
+            <button class="btn btn-primary pushitdown TextAlignInButtonNav columntest" id="exerciselistbtn" v-on:click="GetPersonalList">Exercise plan</button>
+        </div>
+        <!--checks with if statement the length to see if any data exists in the database-->        
+        <ul id="padding_left_none" v-if="YourExerciseList.length > 0">
+            
+            <!--loops through VueJS YourExerciseList to print out the information below-->
+                <li class="nodot" v-for="(exercises, index) in YourExerciseList">
+                    <div>
+                        
+                        <br>
+                            <table class="exercise_table centerpls" id="blackLine">
+                                <td>
+                                    
+                                    <h2 class="centerpls" @click="exerciseToShow =index">{{exercises.name}}
+                                    </h2>
+                                    <button class="btn btn-secondary" v-show="exerciseToShow != index" @click="exerciseToShow = index">Learn more</button>
+                                                
+                                </td>                                    
+                            </table>  
+
+                                <!--The insctructions that pop up, when the exercise name is clicked on. It works by using the v-show bool
+                                to only turn true for the exercise that has the same index as the exerciseToShow-->
+                            <div v-show="exerciseToShow == index">
+                                <div class="left_align">
+                                    <b>Type:</b> {{exercises.type}}
+                                    <br>
+                                    <b>Muscle Type:</b> {{exercises.muscleType}}
+                                    <br>
+                                    <b>Equipment:</b> {{exercises.equipment}}
+                                    <br>
+                                    <b>Difficulty:</b> {{exercises.difficulty}}
+                                    <br>
+                                    <b>Instructions:</b> {{exercises.instructions}}
+                                </div>
+                                <br>
+                            </div>
+     
+                    </div>
+                    <hr>  
+               </li>
+            
+        </ul>
+        <script src="js/index.js"></script>
     </div>
+
 </body>
 </html>

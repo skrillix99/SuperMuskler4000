@@ -41,6 +41,10 @@
         <p class="pushitdown"><b>Name:</b> Kate Fransen</p>
         <p><b>Email:</b> KateFransen@gmail.com</p>
     
+        <form action="">
+            <input type="submit" formaction="Plan.html" value="Your exercise plan" class="btn btn-danger centerpls TextAlignInButtonNav " id="PlanSameSizeAsBtn">
+        </form>
+        <br>
         <!--Gets videofiles from database on button click through a for loop-->
         <button class="btn btn-primary pushitdown TextAlignInButtonNav" v-on:click="GetVideos()">View your recordings</button>
     </div>
@@ -49,9 +53,9 @@
             <li class="nodot" v-for="(recordings, index) in yourRecordings">
                 <div>
                     <br>
-                        <table class="recording_table">
+                        <table class="exercise_table">
                             <td>
-                                <h2 class="centerpls">{{recordings.name}}
+                                <h2 class="centerpls videoName">{{recordings.name}}
                                 </h2>
                                     <video loop autoplay v-bind:src="recordings.videoLink" class="gif_exercise" ></video>
                                     

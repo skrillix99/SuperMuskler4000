@@ -25,6 +25,23 @@
     margin-left: 30%;
 }
 
+#exerciselistbtn{
+    display:block;
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+#blackLine{
+    border-style: ridge;
+    border-right: #000;
+    border-left: #000;
+    border-bottom: #000;
+    width: 100%;
+    border-width: 5px;
+    border-color: black;
+    margin-left: 0% !important;
+    
+}
+
 .plus_btn{
     width: 88px;
     
@@ -32,7 +49,11 @@
 
 .gif_exercise{
     display: block;
-    width: 100%;
+    width: 90%;
+}
+
+.videoName{
+    margin-left: -10%;
 }
 
 .exercise_name_width{
@@ -104,6 +125,11 @@ hr {
     font-size: 20px;
     font-weight: bold;
     color:#000;
+}
+
+#PlanSameSizeAsBtn{
+    padding-right: 25px;
+    padding-left: 28px;;
 }
 .addBorderToButton {
    border-right: 2px solid;
