@@ -4,12 +4,38 @@
         <name>SuperMuskler4000GIFAPI</name>
     </assembly>
     <members>
+        <member name="M:SuperMuskler4000GIFAPI.Controllers.VideosController.GetAllVideos">
+            <summary>
+            Try Catch To check for errors on our GetAllVideos
+            </summary>
+            <returns>returns status codes based on input given (200 OK, 400 Bad Request, 404 Not Found)</returns>
+        </member>
+        <member name="M:SuperMuskler4000GIFAPI.Controllers.VideosController.AddVideoToProfile(ClassLibVideos.Video)">
+            <summary>
+            Post Method to add profile videos to the database through our manager
+            </summary>
+            <param name="video"></param>
+        </member>
         <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.ReadVideo(Microsoft.Data.SqlClient.SqlDataReader)">
             <summary>
             Reads one row of data from the database and puts the data into a Video object
             </summary>
             <param name="reader">Type SqlDataReader. Reads the data from the database</param>
             <returns>Returns an object of the Video class</returns>
+        </member>
+        <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.GetAllVideos">
+            <summary>
+            Selects all the data in our PrivateExerciseVideos table through sql querystrings. used to make a list of videos created by the user
+            </summary>
+            <returns>returns a list of videos created by the user, that exists in our azure database</returns>
+        </member>
+        <member name="M:SuperMuskler4000GIFAPI.Managers.VideoManager.AddVideoToProfile(ClassLibVideos.Video)">
+            <summary>
+            Adds our video recording into the database through sql insert into with values name, and video link
+            throws ArgumentException if it didnt get created
+            </summary>
+            <param name="video"></param>
+            <exception cref="T:System.ArgumentException"></exception>
         </member>
     </members>
 </doc>
