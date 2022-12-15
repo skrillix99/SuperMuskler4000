@@ -37,6 +37,9 @@ port = 12000
 # This executes a terminal command that uses the ffmpeg program on the pi, which converts our 
 # recording from .h264 to .mp4 and makes the rest of the code use the .mp4 version as filename
 os.system(f"ffmpeg -i {filename} {ran}.mp4")
+os.remove(filename)
+
+
 filename = f"/home/pi/SuperMuskler4000/SuperMuskler4000/raspberry/{ran}.mp4"
 
 
@@ -71,3 +74,5 @@ with open(filename, "rb") as f:
         progress.update(len(bytes_read))
 # close the socket
 s.close()
+
+os.remove(filename)
